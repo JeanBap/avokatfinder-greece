@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/css/style.css">
+<style>:root{--country-primary:#0D5EAF;--country-secondary:#FFFFFF;}</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo"><img src="/img/logo.svg" alt="AvökatFinder" class="logo-img" width="60" height="28"><span class="logo-text">AvökatFinder <span>Greece</span></span></a>
+    <button class="hamburger" aria-label="Open menu">&#9776;</button>
+    <nav>
+      <a href="/practice-areas/">Practice Areas</a>
+      <a href="/cities/">By City</a>
+      <a href="/blog/">Expat Guides</a>
+      <a href="/find-a-lawyer/" class="active" class="nav-cta">Find My Lawyer</a>
+      <a href="/dashboard/">My Saved</a>
+    </nav>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="container">
+    <h1>Find My Lawyer in Greece</h1>
+    <p>Answer 5 quick questions to match with the best English-speaking law firms for your situation.</p>
+  </div>
+</section>
+<section style="background:var(--off-white);padding:clamp(2rem,5vw,4rem) 24px;">
+  <div class="wizard-wrap">
+    <div class="wizard-card">
+      <div class="wizard-header"><h2>Find Your Lawyer</h2><p>5 questions &mdash; personalised matches in under a minute</p></div>
+      <div class="wizard-progress">
+        <div class="wizard-steps-bar" id="steps-bar">
+          <div class="wstep active" id="s1">1</div><div class="wstep-line" id="l1"></div>
+          <div class="wstep" id="s2">2</div><div class="wstep-line" id="l2"></div>
+          <div class="wstep" id="s3">3</div><div class="wstep-line" id="l3"></div>
+          <div class="wstep" id="s4">4</div><div class="wstep-line" id="l4"></div>
+          <div class="wstep" id="s5">5</div>
+        </div>
+      </div>
+      <div class="wizard-body">
+        <div class="wizard-step active" id="step-1">
+          <h2>Who needs legal help?</h2>
+          <div class="wizard-opts grid2">
+            <button class="wopt" data-key="entity" data-val="individual"><strong>Individual</strong><br><small>Personal or family matter</small></button>
+            <button class="wopt" data-key="entity" data-val="company"><strong>Business / Company</strong><br><small>Corporate or commercial matter</small></button>
+          </div>
+        </div>
+        <div class="wizard-step" id="step-2">
+          <h2>What type of legal help?</h2>
+          <div class="wizard-opts grid3"><button class="wopt" data-key="area" data-val="corporate-ma">Corporate & M&A</button>
+<button class="wopt" data-key="area" data-val="immigration">Immigration Law</button>
+<button class="wopt" data-key="area" data-val="real-estate">Real Estate Law</button>
+<button class="wopt" data-key="area" data-val="employment">Employment Law</button>
+<button class="wopt" data-key="area" data-val="golden-visa">Golden Visa & Residency</button>
+<button class="wopt" data-key="area" data-val="dispute-resolution">Dispute Resolution</button>
+<button class="wopt" data-key="area" data-val="banking-finance">Banking & Finance</button>
+<button class="wopt" data-key="area" data-val="family-law">Family Law</button>
+<button class="wopt" data-key="area" data-val="criminal-law">Criminal Law</button>
+<button class="wopt" data-key="area" data-val="intellectual-property">Intellectual Property</button>
+<button class="wopt" data-key="area" data-val="tax">Tax Law</button>
+<button class="wopt" data-key="area" data-val="data-protection">Data Protection & IT</button>
+</div>
+        </div>
+        <div class="wizard-step" id="step-3">
+          <h2>Which city?</h2>
+          <div class="wizard-opts grid2"><button class="wopt" data-key="city" data-val="alexandroupolis">Alexandroupolis</button>
+<button class="wopt" data-key="city" data-val="athens">Athens</button>
+<button class="wopt" data-key="city" data-val="chania">Chania</button>
+<button class="wopt" data-key="city" data-val="corfu">Corfu</button>
+<button class="wopt" data-key="city" data-val="heraklion">Heraklion</button>
+<button class="wopt" data-key="city" data-val="ioannina">Ioannina</button>
+<button class="wopt" data-key="city" data-val="kalamata">Kalamata</button>
+<button class="wopt" data-key="city" data-val="kavala">Kavala</button>
+<button class="wopt" data-key="city" data-val="larissa">Larissa</button>
+<button class="wopt" data-key="city" data-val="mykonos">Mykonos</button>
+<button class="wopt" data-key="city" data-val="patras">Patras</button>
+<button class="wopt" data-key="city" data-val="rhodes">Rhodes</button>
+<button class="wopt" data-key="city" data-val="any">Other / No preference</button></div>
+        </div>
+        <div class="wizard-step" id="step-4">
+          <h2>Language preference?</h2>
+          <div class="wizard-opts grid2">
+            <button class="wopt" data-key="lang" data-val="any">English only</button>
+            <button class="wopt" data-key="lang" data-val="german">+ German</button>
+            <button class="wopt" data-key="lang" data-val="french">+ French</button>
+            <button class="wopt" data-key="lang" data-val="spanish">+ Spanish</button>
+            <button class="wopt" data-key="lang" data-val="any">No preference</button>
+          </div>
+        </div>
+        <div class="wizard-step" id="step-5">
+          <h2>Firm type preference?</h2>
+          <div class="wizard-opts">
+            <button class="wopt" data-key="service" data-val="international"><strong>Large international firm</strong><br><small>Highest rates, deepest resources</small></button>
+            <button class="wopt" data-key="service" data-val="mid"><strong>Mid-size local firm</strong><br><small>Strong local knowledge</small></button>
+            <button class="wopt" data-key="service" data-val="boutique"><strong>Boutique specialist</strong><br><small>Personal service, focused expertise</small></button>
+            <button class="wopt" data-key="service" data-val="any">No preference</button>
+          </div>
+        </div>
+        <div class="wizard-results" id="step-results">
+          <h2>Your Top Matches</h2>
+          <p>Best-matched English-speaking law firms in Greece for your situation.</p>
+          <div id="wizard-results-list"></div>
+          <div style="margin-top:24px;text-align:center;">
+            <a href="/practice-areas/" class="btn btn-ghost">Browse all firms</a>
+            <button class="btn btn-primary" id="wizard-restart" style="margin-left:12px;">Start over</button>
+          </div>
+        </div>
+        <div class="wizard-nav" id="wizard-nav">
+          <button class="wbtn-back" id="wbtn-back" style="visibility:hidden">&larr; Back</button>
+          <span id="wstep-label" style="font-size:0.82rem;color:var(--text-muted)">Step 1 of 5</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo"><img src="/img/logo.svg" alt="AvökatFinder" width="44" height="20"
+         style="vertical-align:middle;margin-right:8px;filter:brightness(0) invert(1)">AvökatFinder Greece</a>
+      <p>The English-language guide to lawyers in Greece for expats and foreign nationals.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Practice Areas</h4><ul><li><a href="/practice-areas/corporate-ma/">Corporate & M&A</a></li>
+<li><a href="/practice-areas/immigration/">Immigration Law</a></li>
+<li><a href="/practice-areas/real-estate/">Real Estate Law</a></li>
+<li><a href="/practice-areas/employment/">Employment Law</a></li>
+<li><a href="/practice-areas/golden-visa/">Golden Visa & Residency</a></li>
+<li><a href="/practice-areas/dispute-resolution/">Dispute Resolution</a></li></ul>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/find-a-lawyer/">Find My Lawyer</a></li>
+        <li><a href="/cities/">Lawyers by City</a></li>
+        <li><a href="/blog/">Expat Guides</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 AvökatFinder. For informational purposes only — not legal advice.
+       <a href="mailto:info@avokatfinder.com">info@avokatfinder.com</a></p>
+  </div>
+</footer>
+<script src="/js/main.js"></script>
+</body></html>
+<script>
+(function(){
+const FIRMS=[{"name":"Zepos & Yannopoulos","slug":"zepos-yannopoulos","areas":["employment","tax","corporate-ma","banking-finance"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.zeposyannopoulos.com","email":"info@zyn.gr","phone":"+30 210 728 0600"},{"name":"Papachronopoulos & Associates","slug":"papachronopoulos-associates","areas":["tax","banking-finance","real-estate","employment","corporate-ma"],"city":"athens","langs":"english, greek, french","type":"Local","size":"mid","website":"https://www.papachronopoulos.gr","email":"info@papachronopoulos.gr","phone":"+30 210 721 1800"},{"name":"Karatzas & Associates","slug":"karatzas-associates","areas":["real-estate","employment","intellectual-property","corporate-ma","dispute-resolution"],"city":"athens","langs":"english, greek, german","type":"Local","size":"mid","website":"https://www.karatzaslaw.gr","email":"info@karatzaslaw.gr","phone":"+30 210 322 3700"},{"name":"Lambadarios Law Firm","slug":"lambadarios-law-firm","areas":["corporate-ma","banking-finance"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.lambadarios.gr","email":"info@lambadarios.gr","phone":"+30 210 724 2000"},{"name":"Potamianos & Associates","slug":"potamianos-associates","areas":["tax","real-estate","employment","corporate-ma","immigration"],"city":"athens","langs":"english, greek, french","type":"Local","size":"mid","website":"https://www.potamianoslaw.gr","email":"info@potamianoslaw.gr","phone":"+30 210 323 5700"},{"name":"Angelopoulos & Manos","slug":"angelopoulos-manos","areas":["family-law","tax","real-estate","employment","immigration"],"city":"athens","langs":"english, greek, german","type":"Local","size":"mid","website":"https://www.angelopoulos-manos.gr","email":"info@angelopoulos-manos.gr","phone":"+30 210 331 5100"},{"name":"Grigorakis Law Firm","slug":"grigorakis-law-firm","areas":["immigration","real-estate"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.grigorakis.gr","email":"info@grigorakis.gr","phone":"+30 210 324 8900"},{"name":"Mavromatis & Partners","slug":"mavromatis-partners","areas":["employment","tax","corporate-ma","banking-finance"],"city":"athens","langs":"english, greek, italian","type":"Local","size":"mid","website":"https://www.mavromatis-partners.gr","email":"office@mavromatis-partners.gr","phone":"+30 210 617 1100"},{"name":"Lianidis & Associates","slug":"lianidis-associates","areas":["intellectual-property","corporate-ma","data-protection"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.lianidis.gr","email":"info@lianidis.gr","phone":"+30 210 369 1600"},{"name":"Kyriakides Georgopoulos","slug":"kyriakides-georgopoulos","areas":["banking-finance","corporate-ma","dispute-resolution"],"city":"athens","langs":"english, greek, french, german","type":"Local","size":"mid","website":"https://www.kyriakides.gr","email":"contact@kyriakides.gr","phone":"+30 210 289 0600"},{"name":"Garbi & Partners Law Office","slug":"garbi-partners-law-office","areas":["employment","corporate-ma","real-estate"],"city":"thessaloniki","langs":"english, greek","type":"Local","size":"mid","website":"https://www.garbi-partners.gr","email":"info@garbi-partners.gr","phone":"+30 231 042 2200"},{"name":"Nikolaou Law Firm","slug":"nikolaou-law-firm","areas":["immigration","family-law","corporate-ma","real-estate"],"city":"thessaloniki","langs":"english, greek, german","type":"Local","size":"mid","website":"https://www.nikolaoulaw.gr","email":"info@nikolaoulaw.gr","phone":"+30 231 055 5000"},{"name":"Santineri Law Office","slug":"santineri-law-office","areas":["employment","family-law","corporate-ma","real-estate"],"city":"patras","langs":"english, greek","type":"Local","size":"mid","website":"https://www.santineri.gr","email":"info@santineri.gr","phone":"+30 261 027 4000"},{"name":"Constantinou & Associates","slug":"constantinou-associates","areas":["family-law","tax","real-estate","corporate-ma","immigration"],"city":"heraklion","langs":"english, greek","type":"Local","size":"mid","website":"https://www.constantinou-law.gr","email":"info@constantinou-law.gr","phone":"+30 281 034 2000"},{"name":"Rouvas Law Firm","slug":"rouvas-law-firm","areas":["family-law","real-estate"],"city":"rhodes","langs":"english, greek","type":"Local","size":"mid","website":"https://www.rouvas-law.gr","email":"info@rouvas-law.gr","phone":"+30 224 102 3000"},{"name":"Papathanassopoulos & Sons Law","slug":"papathanassopoulos-sons-law","areas":["tax","banking-finance","real-estate","corporate-ma","dispute-resolution"],"city":"athens","langs":"english, greek, french","type":"Local","size":"mid","website":"https://www.papathanassopoulos-law.gr","email":"info@papathanassopoulos-law.gr","phone":"+30 210 343 7600"},{"name":"Methenitis & Partners","slug":"methenitis-partners","areas":["employment","corporate-ma","dispute-resolution"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.methenitis.gr","email":"office@methenitis.gr","phone":"+30 210 645 6700"},{"name":"Patrikios & Associates","slug":"patrikios-associates","areas":["criminal-law","dispute-resolution"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.patrikios.gr","email":"info@patrikios.gr","phone":"+30 210 341 2200"},{"name":"Kallisti Law Firm","slug":"kallisti-law-firm","areas":["family-law"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.kallisti-law.gr","email":"info@kallisti-law.gr","phone":"+30 210 340 5500"},{"name":"Dimitrakopoulou & Associates","slug":"dimitrakopoulou-associates","areas":["tax","corporate-ma"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.dimitrakopoulou.gr","email":"info@dimitrakopoulou.gr","phone":"+30 210 622 4400"},{"name":"Peppas Law Office","slug":"peppas-law-office","areas":["real-estate"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.peppas-law.gr","email":"office@peppas-law.gr","phone":"+30 210 725 3300"},{"name":"Vlachos & Co Law Firm","slug":"vlachos-co-law-firm","areas":["banking-finance"],"city":"athens","langs":"english, greek, german","type":"Local","size":"mid","website":"https://www.vlachos-co.gr","email":"info@vlachos-co.gr","phone":"+30 210 728 9900"},{"name":"Evaggelatos & Associates","slug":"evaggelatos-associates","areas":["intellectual-property"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.evaggelatos.gr","email":"info@evaggelatos.gr","phone":"+30 210 360 6800"},{"name":"Troianos & Partners","slug":"troianos-partners","areas":["employment","corporate-ma","real-estate"],"city":"thessaloniki","langs":"english, greek","type":"Local","size":"mid","website":"https://www.troianos-partners.gr","email":"info@troianos-partners.gr","phone":"+30 231 023 5500"},{"name":"Vardinoyannis Law Office","slug":"vardinoyannis-law-office","areas":["intellectual-property","corporate-ma"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.vardinoyannis-law.gr","email":"info@vardinoyannis-law.gr","phone":"+30 210 331 7700"},{"name":"Frangos & Associates","slug":"frangos-associates","areas":["tax","corporate-ma"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.frangos-law.gr","email":"office@frangos-law.gr","phone":"+30 210 617 2300"},{"name":"Sourlis & Associates","slug":"sourlis-associates","areas":["golden-visa","immigration"],"city":"athens","langs":"english, greek, russian","type":"Local","size":"mid","website":"https://www.sourlis.gr","email":"info@sourlis.gr","phone":"+30 210 345 6700"},{"name":"Komnenos & Partners","slug":"komnenos-partners","areas":["corporate-ma","dispute-resolution"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.komnenos-partners.gr","email":"info@komnenos-partners.gr","phone":"+30 210 321 4500"},{"name":"Angelopoulos Law Firm","slug":"angelopoulos-law-firm","areas":["real-estate"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.angelopoulos-law.gr","email":"info@angelopoulos-law.gr","phone":"+30 210 720 4400"},{"name":"Spirou & Kalogeropoulos","slug":"spirou-kalogeropoulos","areas":["corporate-ma","dispute-resolution"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.spirou-kalogeropoulos.gr","email":"contact@spirou-kalogeropoulos.gr","phone":"+30 210 628 3300"},{"name":"Katsaros & Associates Law Office","slug":"katsaros-associates-law-office","areas":["criminal-law","dispute-resolution"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.katsaros-law.gr","email":"info@katsaros-law.gr","phone":"+30 210 322 8800"},{"name":"Lytos & Associates","slug":"lytos-associates","areas":["corporate-ma"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.lytos-law.gr","email":"info@lytos-law.gr","phone":"+30 210 725 6600"},{"name":"Themeli & Partners","slug":"themeli-partners","areas":["corporate-ma"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.themeli-partners.gr","email":"office@themeli-partners.gr","phone":"+30 210 331 5500"},{"name":"Nikolaidou & Associates","slug":"nikolaidou-associates","areas":["tax","corporate-ma","real-estate"],"city":"athens","langs":"english, greek, italian","type":"Local","size":"mid","website":"https://www.nikolaidou-law.gr","email":"info@nikolaidou-law.gr","phone":"+30 210 641 2200"},{"name":"Vasileios Tsimponis Law Office","slug":"vasileios-tsimponis-law-office","areas":["family-law"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.tsimponis-law.gr","email":"office@tsimponis-law.gr","phone":"+30 210 722 3400"},{"name":"Davellas & Associates","slug":"davellas-associates","areas":["corporate-ma"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.davellas-law.gr","email":"info@davellas-law.gr","phone":"+30 210 360 2200"},{"name":"Karantonis Law Firm","slug":"karantonis-law-firm","areas":["employment"],"city":"athens","langs":"english, greek","type":"Local","size":"mid","website":"https://www.karantonis-law.gr","email":"info@karantonis-law.gr","phone":"+30 210 323 5000"},{"name":"Papachristou & Associates","slug":"papachristou-associates","areas":["corporate-ma"],"city":"athens","langs":"english, greek, french","type":"Local","size":"mid","website":"https://www.papachristou-law.gr","email":"info@papachristou-law.gr","phone":"+30 210 723 4400"},{"name":"Tsirigotis & Associates","slug":"tsirigotis-associates","areas":["banking-finance","corporate-ma","real-estate"],"city":"thessaloniki","langs":"english, greek","type":"Local","size":"mid","website":"https://www.tsirigotis-law.gr","email":"info@tsirigotis-law.gr","phone":"+30 231 028 3500"},{"name":"Lazaridis Law Office","slug":"lazaridis-law-office","areas":["criminal-law","family-law","corporate-ma","real-estate"],"city":"patras","langs":"english, greek","type":"Local","size":"mid","website":"https://www.lazaridis-law.gr","email":"info@lazaridis-law.gr","phone":"+30 261 035 4000"},{"name":"Bahas, Gramatidis & Partners","slug":"bahas-gramatidis-partners","areas":["banking-finance","employment","intellectual-property","corporate-ma","dispute-resolution"],"city":"athens","langs":"greek, english, french","type":"Local","size":"mid","website":"www.bgpartners.gr","email":"info@bgpartners.gr","phone":"+30 210 3688000"},{"name":"Karatzas & Partners","slug":"karatzas-partners","areas":["golden-visa","immigration","real-estate"],"city":"athens","langs":"greek, english","type":"Local","size":"mid","website":"www.karatzaslaw.com","email":"info@karatzaslaw.com","phone":"+30 210 7249000"},{"name":"Drakopoulos Law Office","slug":"drakopoulos-law-office","areas":["tax","corporate-ma","real-estate"],"city":"athens","langs":"greek, english, german","type":"Local","size":"mid","website":"www.drakopoulos.gr","email":"office@drakopoulos.gr","phone":"+30 210 3614400"},{"name":"Papadimitriou Avvokati","slug":"papadimitriou-avvokati","areas":["criminal-law","family-law","dispute-resolution"],"city":"athens","langs":"greek, english","type":"Local","size":"mid","website":"www.papadimitrioulaw.gr","email":"","phone":"+30 210 6442800"},{"name":"Tsatsos Law Office","slug":"tsatsos-law-office","areas":["corporate-ma","banking-finance"],"city":"athens","langs":"greek, english, french, german","type":"Local","size":"mid","website":"www.tsatsoslaw.gr","email":"info@tsatsoslaw.gr","phone":"+30 210 7214500"},{"name":"Skourtis Law","slug":"skourtis-law","areas":["employment","corporate-ma","real-estate"],"city":"athens","langs":"greek, english","type":"Local","size":"mid","website":"www.skourtis-law.gr","email":"","phone":"+30 210 3825000"},{"name":"Angelopoulos Law Office","slug":"angelopoulos-law-office","areas":["family-law","dispute-resolution"],"city":"athens","langs":"greek, english","type":"Local","size":"mid","website":"www.angelopoulos-avvokati.gr","email":"contact@angelopoulos-avvokati.gr","phone":"+30 210 6232100"},{"name":"Papakonstantinou & Associates","slug":"papakonstantinou-associates","areas":["corporate-ma"],"city":"athens","langs":"greek, english, german","type":"Local","size":"mid","website":"www.papakonstantinou.gr","email":"info@papakonstantinou.gr","phone":"+30 210 9450800"},{"name":"Nikolaidis Law Firm","slug":"nikolaidis-law-firm","areas":["intellectual-property"],"city":"athens","langs":"greek, english","type":"Local","size":"mid","website":"www.nikolaidislaw.gr","email":"","phone":"+30 210 8200500"},{"name":"Metaxas & Associates","slug":"metaxas-associates","areas":["employment","tax","corporate-ma"],"city":"thessaloniki","langs":"greek, english, german","type":"Local","size":"mid","website":"www.metaxas-law.gr","email":"info@metaxas-law.gr","phone":"+30 231 0226600"},{"name":"Panos Voulgaris Law Office","slug":"panos-voulgaris-law-office","areas":["dispute-resolution","corporate-ma","real-estate"],"city":"thessaloniki","langs":"greek, english","type":"Local","size":"mid","website":"www.pvlaw.gr","email":"contact@pvlaw.gr","phone":"+30 231 0545600"},{"name":"Nikolaou & Partners Law","slug":"nikolaou-partners-law","areas":["corporate-ma","banking-finance"],"city":"thessaloniki","langs":"greek, english, french","type":"Local","size":"mid","website":"www.nikolaou-partners.gr","email":"","phone":"+30 231 0321800"},{"name":"Tsagkalidis Law Office","slug":"tsagkalidis-law-office","areas":["family-law","corporate-ma"],"city":"patras","langs":"greek, english","type":"Local","size":"mid","website":"www.tsagkalidis-law.gr","email":"info@tsagkalidis-law.gr","phone":"+30 261 0220800"},{"name":"Anastasios Papadakis & Co","slug":"anastasios-papadakis-co","areas":["corporate-ma","real-estate"],"city":"patras","langs":"greek, english","type":"Local","size":"mid","website":"www.papadakislaw.gr","email":"","phone":"+30 261 0226500"},{"name":"Crete Legal Services","slug":"crete-legal-services","areas":["immigration","corporate-ma","real-estate"],"city":"heraklion","langs":"greek, english, german","type":"Local","size":"mid","website":"www.cretelaw.gr","email":"info@cretelaw.gr","phone":"+30 281 0347600"},{"name":"Papadopoulos Law Offices","slug":"papadopoulos-law-offices","areas":["real-estate"],"city":"chania","langs":"greek, english","type":"Local","size":"mid","website":"www.papadopouloslaw.gr","email":"contact@papadopouloslaw.gr","phone":"+30 282 0022100"},{"name":"Chania Legal Associates","slug":"chania-legal-associates","areas":["family-law","dispute-resolution"],"city":"chania","langs":"greek, english","type":"Local","size":"mid","website":"www.chanialaw.gr","email":"","phone":"+30 282 0055600"},{"name":"Rhodes International Law","slug":"rhodes-international-law","areas":["corporate-ma","real-estate"],"city":"rhodes","langs":"greek, english, german, russian","type":"Local","size":"mid","website":"www.rhodeslaw.gr","email":"info@rhodeslaw.gr","phone":"+30 224 1039800"},{"name":"Mykonos Legal Services","slug":"mykonos-legal-services","areas":["real-estate"],"city":"mykonos","langs":"greek, english, french, italian","type":"Local","size":"mid","website":"www.mykonoslaw.gr","email":"contact@mykonoslaw.gr","phone":"+30 289 0026600"},{"name":"Santorini Law Office","slug":"santorini-law-office","areas":["family-law","real-estate"],"city":"santorini","langs":"greek, english, german","type":"Local","size":"mid","website":"www.santorinilaw.gr","email":"","phone":"+30 286 0031600"},{"name":"Volos Business Law","slug":"volos-business-law","areas":["corporate-ma"],"city":"volos","langs":"greek, english","type":"Local","size":"mid","website":"www.volosbusinesslaw.gr","email":"info@volosbusinesslaw.gr","phone":"+30 242 1032200"},{"name":"Ioannina Legal Consultants","slug":"ioannina-legal-consultants","areas":["corporate-ma"],"city":"ioannina","langs":"greek, english","type":"Local","size":"boutique","website":"www.ioanninalaw.gr","email":"","phone":"+30 265 1048100"},{"name":"Larissa Law Partners","slug":"larissa-law-partners","areas":["employment","corporate-ma"],"city":"larissa","langs":"greek, english","type":"Local","size":"mid","website":"www.larissalaw.gr","email":"office@larissalaw.gr","phone":"+30 241 0531100"},{"name":"Kavala Maritime Law","slug":"kavala-maritime-law","areas":["intellectual-property","corporate-ma"],"city":"kavala","langs":"greek, english","type":"Local","size":"mid","website":"www.kavalamaritimelaw.gr","email":"","phone":"+30 251 0541500"},{"name":"Alexandroupolis Legal","slug":"alexandroupolis-legal","areas":["corporate-ma"],"city":"alexandroupolis","langs":"greek, english","type":"Local","size":"boutique","website":"www.alexandroupolislaw.gr","email":"","phone":"+30 255 1060800"},{"name":"Kalamata Law Office","slug":"kalamata-law-office","areas":["family-law","corporate-ma","real-estate"],"city":"kalamata","langs":"greek, english","type":"Local","size":"mid","website":"www.kalamatalaw.gr","email":"info@kalamatalaw.gr","phone":"+30 271 0021600"},{"name":"Corfu International Law","slug":"corfu-international-law","areas":["corporate-ma","real-estate"],"city":"corfu","langs":"greek, english, italian","type":"Local","size":"mid","website":"www.corfulaw.gr","email":"contact@corfulaw.gr","phone":"+30 266 1027300"},{"name":"Lalakas & Associates","slug":"lalakas-associates","areas":["dispute-resolution","corporate-ma","real-estate"],"city":"athens","langs":"greek, english, german","type":"Local","size":"mid","website":"www.lalakas-law.gr","email":"info@lalakas-law.gr","phone":"+30 210 3241600"},{"name":"Sapountzis Law","slug":"sapountzis-law","areas":["family-law"],"city":"athens","langs":"greek, english","type":"Local","size":"mid","website":"www.sapountzis.gr","email":"contact@sapountzis.gr","phone":"+30 210 7244500"},{"name":"Mavros & Partners","slug":"mavros-partners","areas":["banking-finance"],"city":"athens","langs":"greek, english, french","type":"Local","size":"mid","website":"www.mavrospartners.gr","email":"","phone":"+30 210 9218000"},{"name":"Delis Law Firm","slug":"delis-law-firm","areas":["criminal-law","dispute-resolution"],"city":"athens","langs":"greek, english, german","type":"Local","size":"mid","website":"www.delislaw.gr","email":"office@delislaw.gr","phone":"+30 210 6284300"},{"name":"Kalliopi Stefanou Law Office","slug":"kalliopi-stefanou-law-office","areas":["tax","corporate-ma"],"city":"athens","langs":"greek, english","type":"Local","size":"boutique","website":"www.stefanoulaw.gr","email":"","phone":"+30 210 7290200"},{"name":"Michaelides & Papadopoulos","slug":"michaelides-papadopoulos","areas":["employment","corporate-ma"],"city":"athens","langs":"greek, english, french","type":"Local","size":"mid","website":"www.michaelides-law.gr","email":"info@michaelides-law.gr","phone":"+30 210 3623100"},{"name":"Douros Legal","slug":"douros-legal","areas":["corporate-ma","dispute-resolution"],"city":"athens","langs":"greek, english","type":"Local","size":"mid","website":"www.douros.gr","email":"mail@douros.gr","phone":"+30 210 9608100"},{"name":"Stamatakis Law Office","slug":"stamatakis-law-office","areas":["real-estate"],"city":"athens","langs":"greek, english","type":"Local","size":"mid","website":"www.stamatakislaw.gr","email":"","phone":"+30 210 6456700"},{"name":"Adamantia Nikolaidi Law","slug":"adamantia-nikolaidi-law","areas":["corporate-ma","banking-finance"],"city":"athens","langs":"greek, english, french, german","type":"Local","size":"mid","website":"www.nikolaidilaw.gr","email":"contact@nikolaidilaw.gr","phone":"+30 210 7215600"},{"name":"Katsidonis & Associates","slug":"katsidonis-associates","areas":["tax","corporate-ma","real-estate"],"city":"athens","langs":"greek, english, german","type":"Local","size":"mid","website":"www.katsidonis.gr","email":"info@katsidonis.gr","phone":"+30 210 3642200"},{"name":"Manousos Law Firm","slug":"manousos-law-firm","areas":["corporate-ma","real-estate"],"city":"thessaloniki","langs":"greek, english","type":"Local","size":"mid","website":"www.manousoslaw.gr","email":"","phone":"+30 231 0223100"},{"name":"Argyropoulos & Kydoniatis","slug":"argyropoulos-kydoniatis","areas":["employment","corporate-ma","banking-finance"],"city":"thessaloniki","langs":"greek, english, french","type":"Local","size":"mid","website":"www.aklaw.gr","email":"info@aklaw.gr","phone":"+30 231 0241600"},{"name":"Stavrakas Law Office","slug":"stavrakas-law-office","areas":["real-estate"],"city":"thessaloniki","langs":"greek, english","type":"Local","size":"boutique","website":"www.stavrakas.gr","email":"","phone":"+30 231 0552800"},{"name":"Peloponnese Law Partners","slug":"peloponnese-law-partners","areas":["corporate-ma"],"city":"patras","langs":"greek, english, german","type":"Local","size":"mid","website":"www.peloponnese-law.gr","email":"info@peloponnese-law.gr","phone":"+30 261 0325600"},{"name":"Mediterranean Legal Services","slug":"mediterranean-legal-services","areas":["real-estate"],"city":"heraklion","langs":"greek, english, german, french","type":"Local","size":"mid","website":"www.medlegalpro.gr","email":"contact@medlegalpro.gr","phone":"+30 281 0288600"},{"name":"Crete Property Law Center","slug":"crete-property-law-center","areas":["corporate-ma","real-estate"],"city":"heraklion","langs":"greek, english","type":"Local","size":"mid","website":"www.cretepropertylaw.gr","email":"","phone":"+30 281 0343900"},{"name":"Western Crete Legal","slug":"western-crete-legal","areas":["real-estate"],"city":"chania","langs":"greek, english, german, italian","type":"Local","size":"mid","website":"www.westcretelaw.gr","email":"info@westcretelaw.gr","phone":"+30 282 0098600"},{"name":"Aegean Island Legal Consultants","slug":"aegean-island-legal-consultants","areas":["corporate-ma","real-estate"],"city":"rhodes","langs":"greek, english, german","type":"Local","size":"mid","website":"www.aegeanlaw.gr","email":"","phone":"+30 224 1042200"},{"name":"Cycladic Islands Law","slug":"cycladic-islands-law","areas":["real-estate"],"city":"mykonos","langs":"greek, english, italian, french","type":"Local","size":"mid","website":"www.cycladic-law.gr","email":"office@cycladic-law.gr","phone":"+30 289 0025300"},{"name":"Caldera Legal Services","slug":"caldera-legal-services","areas":["family-law","real-estate"],"city":"santorini","langs":"greek, english, german","type":"Local","size":"boutique","website":"www.calderalaw.gr","email":"","phone":"+30 286 0033800"},{"name":"Ionian Islands Law Firm","slug":"ionian-islands-law-firm","areas":["corporate-ma","real-estate"],"city":"corfu","langs":"greek, english, italian, albanian","type":"Local","size":"mid","website":"www.ionianlaw.gr","email":"contact@ionianlaw.gr","phone":"+30 266 1033100"}];
+const answers={};let step=1;
+function scoreLabel(sc){return sc>=10?'Strong match':sc>=5?'Good match':sc>=2?'Possible match':'Listed firm';}
+function scoreDots(sc,max){const f=Math.min(5,Math.round((sc/Math.max(max,1))*5));return[1,2,3,4,5].map(i=>'<span style="color:'+(i<=f?'var(--gold)':'#ccc')+'">&#9679;</span>').join('');}
+function showResults(){
+  const scored=FIRMS.map(f=>{let sc=0;
+    if(answers.area&&f.areas.includes(answers.area))sc+=10;
+    if(answers.city&&answers.city!=='any'&&f.city===answers.city)sc+=5;
+    if(answers.lang&&answers.lang!=='any'&&f.langs.includes(answers.lang))sc+=3;
+    if(answers.entity==='company'&&f.type.includes('International'))sc+=2;
+    if(answers.entity==='individual'&&f.size==='boutique')sc+=2;
+    if(answers.service==='international'&&f.type.includes('International'))sc+=5;
+    else if(answers.service==='mid'&&f.size==='mid')sc+=5;
+    else if(answers.service==='boutique'&&f.size==='boutique')sc+=5;
+    else if(answers.service==='any')sc+=2;
+    return{f,sc};
+  }).sort((a,b)=>b.sc-a.sc).slice(0,3);
+  const maxSc=scored[0]?.sc||1;
+  const rl=['Best match','2nd choice','3rd choice'];
+  document.getElementById('wizard-results-list').innerHTML=scored.map(({f,sc},i)=>{
+    const areas=(f.areas||[]).slice(0,3).map(a=>'<span class="tag">'+a.replace(/-/g,' ')+'</span>').join('');
+    const links=[
+      f.website?'<a href="'+f.website+'" target="_blank" rel="noopener" class="btn btn-ghost btn-small">Website</a>':'',
+      f.email?'<a href="mailto:'+f.email+'" class="btn btn-primary btn-small">Email</a>':'',
+      f.phone?'<a href="tel:'+f.phone.replace(/ /g,'')+'" class="btn btn-ghost btn-small">Call</a>':'',
+    ].filter(Boolean).join('');
+    return '<div class="result-card"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><span class="result-rank">'+rl[i]+'</span><span style="font-size:0.8rem;color:var(--text-muted)">'+scoreDots(sc,maxSc)+' <em>'+scoreLabel(sc)+'</em></span></div><h3>'+f.name+'</h3><div class="result-tags">'+areas+'</div><div class="result-links">'+links+'</div></div>';
+  }).join('');
+}
+function goStep(n){
+  document.querySelectorAll('.wizard-step').forEach(el=>el.classList.remove('active'));
+  if(n==='results'){document.getElementById('step-results').classList.add('active');document.getElementById('wizard-nav').style.display='none';showResults();return;}
+  document.getElementById('step-'+n).classList.add('active');
+  for(let i=1;i<=5;i++){const s=document.getElementById('s'+i),l=document.getElementById('l'+i);
+    if(i<n){s.classList.add('done');s.classList.remove('active');if(l)l.classList.add('done');}
+    else if(i===n){s.classList.add('active');s.classList.remove('done');}
+    else{s.classList.remove('active','done');if(l)l.classList.remove('done');}
+  }
+  document.getElementById('wstep-label').textContent='Step '+n+' of 5';
+  document.getElementById('wbtn-back').style.visibility=n>1?'visible':'hidden';
+}
+document.querySelectorAll('.wopt').forEach(btn=>{btn.addEventListener('click',function(){
+  answers[this.dataset.key]=this.dataset.val;
+  this.closest('.wizard-opts').querySelectorAll('.wopt').forEach(b=>b.classList.remove('selected'));
+  this.classList.add('selected');
+  setTimeout(()=>{if(step<5){step++;goStep(step);}else{goStep('results');}},220);
+});});
+document.getElementById('wbtn-back').addEventListener('click',()=>{if(step>1){step--;goStep(step);}});
+document.getElementById('wizard-restart').addEventListener('click',()=>{Object.keys(answers).forEach(k=>delete answers[k]);step=1;document.getElementById('wizard-nav').style.display='';document.querySelectorAll('.wopt').forEach(b=>b.classList.remove('selected'));goStep(1);document.getElementById('step-results').classList.remove('active');});
+})();
+</script>
+</body></html>
