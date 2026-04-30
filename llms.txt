@@ -1,5 +1,37 @@
 # AvökatFinder Greece
-> English-speaking law firm directory for Greece
+> The English-language directory of lawyers and law firms in Greece for expats, foreign nationals and international businesses.
 
-Directory: https://greece.avokatfinder.com
-Email: info@avokatfinder.com
+## Main Pages
+- https://greece.avokatfinder.com/: Home — find an English-speaking lawyer in Greece
+- https://greece.avokatfinder.com/lawyers/: Directory of verified law firms and lawyers in Greece
+- https://greece.avokatfinder.com/glossary/: Legal glossary — plain-English definitions of Greece legal terms
+- https://greece.avokatfinder.com/blog/: Expat legal guides and property law articles for Greece
+- https://greece.avokatfinder.com/about/: About AvökatFinder Greece
+- https://greece.avokatfinder.com/contact/: Contact us
+
+## Legal Glossary Terms
+- https://greece.avokatfinder.com/glossary/adeio-diamonis/
+- https://greece.avokatfinder.com/glossary/afm/
+- https://greece.avokatfinder.com/glossary/afm/
+- https://greece.avokatfinder.com/glossary/antiprosopeia/
+- https://greece.avokatfinder.com/glossary/apostolos-apostille-greece/
+- https://greece.avokatfinder.com/glossary/efka/
+- https://greece.avokatfinder.com/glossary/fma-property-tax/
+- https://greece.avokatfinder.com/glossary/golden-visa-greece/
+- https://greece.avokatfinder.com/glossary/kad/
+- https://greece.avokatfinder.com/glossary/klironomia/
+- https://greece.avokatfinder.com/glossary/ktimatologio/
+- https://greece.avokatfinder.com/glossary/misthotirio/
+- https://greece.avokatfinder.com/glossary/symolaio/
+- https://greece.avokatfinder.com/glossary/symvoliografos/
+
+## Site Info
+- Language: English
+- Audience: Expats, foreign nationals, international property buyers and businesses in Greece
+- Content: Law firm directory, legal glossary, expat legal guides
+- Last updated: 2026-04-30
+- Sitemap: https://greece.avokatfinder.com/sitemap.xml
+
+## Permissions
+User-agent: *
+Allow: /
